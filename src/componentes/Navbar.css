@@ -1,0 +1,100 @@
+
+.NavBar {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: black;
+    background-color: rgb(241, 9, 9);
+    width: 100%;
+    height:55px;
+    color: seashell;  
+    position:fixed;
+  }
+  .saludo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .icon_nav{
+    width: 50px;
+    height: 50px;
+  }  
+  /*nav.navbar {
+    width: 100%;
+    position:fixed;
+    padding: 10px 20px;
+    height: 80px;
+  }*/
+  .navbar-logo {
+    font-size: 2rem;
+  }  
+
+
+  .navbar-links {
+    display: flex;
+    place-items: center;
+  }
+  .menu {
+    backface-visibility: hidden;
+    transform: perspective(300px) rotateX(180deg);
+  } 
+  #Lista {    
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }  
+  #Lista a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-back-image);
+  }  
+  #Lista a:hover {
+    text-decoration: underline;
+    color: rgb(241, 238, 255);
+    text-shadow: 0 0 0.5em rgb(255, 0, 179), 0 0 0.3em #ee991a;
+  }
+ 
+  @media screen and (max-width: 600px) {  
+    .NavBar {
+      background-color: rgb(47, 0, 255);
+      align-items: center;
+    }
+    .navbar-logo {
+      font-size: 1rem;
+    }       
+    .navbar-links {
+       
+      border: solid 1px rgba(255, 228, 181, 0.308);        
+    }
+    .menu {
+      font-size: 1rem;
+      transform: perspective(300px) rotateX(360deg);
+      color: seashell;
+    }  
+    #Lista {    
+      backface-visibility: hidden;
+      transform: perspective(300px) rotateY(180deg);
+      display: flex;
+      flex-direction: column; 
+      
+ 
+    }
+    #Lista a {
+      font-size: 1rem;
+      color: black; 
+    }  
+    .navbar-links:hover #Lista {
+      transform: perspective(300px) rotateY(360deg);
+      border: solid 1px rgba(255, 228, 181, 0.308);        
+      box-shadow: 0px 0px 50px 10px rgba(255, 228, 181, 0.507);
+      border-radius: 10px 0 0 10px;
+      background-color: rgb(240, 248, 255);
+    
+    }  
+    a {
+      width: 70px;
+    }
+  }
+  
