@@ -23,9 +23,7 @@ const NavBar = () => {
             
               <a href="#/certificates">Certificados</a>
 
-              <a href="#/contact">Formulario</a>
-
-              <a href="#/networks">Redes Sociales</a>
+             
            
           </li>
         </ul>
