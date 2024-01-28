@@ -21,7 +21,7 @@ const NavBar = () => {
                         
               <a href="#/projects">Proyectos</a>
             
-              <a href="#/certificates">Certificados</a>
+            
 
              
            
