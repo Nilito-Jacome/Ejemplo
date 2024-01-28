@@ -1,11 +1,12 @@
 import './Home.css';
+import { motion } from "framer-motion"
 
 const Home = () => {
 
   return (
 
     <div className="Home">
-      <div className="Box_1">hola desde about</div>
+      <motion.div className="Box_1">hola desde about</motion.div>
       <div className="Box_2">hola desde habilidades</div>
       <div className="Box_3">hola desde proyectos</div>
       <div className="Box_4">hola desde certificados</div>

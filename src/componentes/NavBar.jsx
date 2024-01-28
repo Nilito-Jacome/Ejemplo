@@ -15,8 +15,15 @@ const NavBar = () => {
           <h1 className="menu">Menú</h1>
           <li id="Lista">
             
-              <a href="/">Home</a>        
-                                                              
+              <a href="/">Home</a>
+
+              <a href="/acerca">Acerca</a>            
+            
+              <a href="#/skill">Habilidades</a>                
+                      
+              <a href="#/projects">Proyectos</a>
+          
+              <a href="#/certificates">Certificados</a>                                                              
                                                         
           </li>
         </ul>
