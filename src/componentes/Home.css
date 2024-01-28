@@ -4,9 +4,7 @@
     grid-template-columns: repeat(6, 190px);
     grid-template-rows: repeat(6, 60px);
     gap: 27px 30px;
-    place-content: center;
-    padding-top: 80px;
-    padding-bottom: 32;
+    margin: 80px auto 32px  auto;
 }
 .Box_1 {
     grid-column: 1 / 3;
