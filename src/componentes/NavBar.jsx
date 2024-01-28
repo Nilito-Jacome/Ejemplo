@@ -1,4 +1,4 @@
-import './NavBar.css';
+import './Navbar.css';
 
 const NavBar = () => {
 
@@ -15,13 +15,9 @@ const NavBar = () => {
           <h1 className="menu">Menú</h1>
           <li id="Lista">
             
-              <a href="/">Acerca</a>            
-            
-              <a href="#/skill">Habilidades</a>                
-                        
-                     
-                         
-           
+              <a href="/">Home</a>        
+                                                              
+                                                        
           </li>
         </ul>
       </div>
