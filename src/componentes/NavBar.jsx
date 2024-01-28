@@ -19,11 +19,8 @@ const NavBar = () => {
             
               <a href="#/skill">Habilidades</a>                
                         
-              <a href="#/projects">Proyectos</a>
-            
-            
-
-             
+                     
+                         
            
           </li>
         </ul>
