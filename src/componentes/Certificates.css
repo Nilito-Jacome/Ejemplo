@@ -1,0 +1,54 @@
+  .Certificates {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-decoration: none;
+    color:seashell;
+    font-size: large;
+  }
+  .TituCerti {
+    padding-bottom: 430px;
+  }
+  
+  .next,
+  .prev {
+    top: calc(50% - 20px);
+    position: absolute;
+    background:rgba(105, 105, 105, 0.356);
+    border-radius: 0px;
+    width: 10px;
+    height: 10px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+  }
+  
+  .next {
+    right: 10px;
+    transform: scale(10);
+  }
+  
+  .prev {
+    left: 10px;
+    transform: scale(-10);
+  }
+  
+  .ImgCert {
+    position: absolute;
+    max-width: 50vw;
+    max-height: 90vh;
+    margin-top: 100px;
+  }
+  
+  

@@ -1,14 +1,55 @@
 import './App.css';
 import Home from '../src/componentes/Home';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import NavBar from '../src/componentes/NavBar';
+import About from '../src/componentes/About';
+import Skill from '../src/componentes/Skill';
+import Projects from '../src/componentes/Projects';
+import Certificates from '../src/componentes/Certificates';
+import Contact from '../src/componentes/Contact';
+import Network from '../src/componentes/Network';
+
 
 function App() {
   
   return (
     
-      <div>
+      <div className='App'>
         <NavBar />
-        <Home />
+        
+        <HashRouter>        
+        <Routes>
+        <Route
+            path = "/"
+            element = {<Home/>}            
+          />
+          <Route
+            path = "/about"
+            element = {<About/>}            
+          />     
+          <Route
+            path = "/skill"
+            element = {<Skill/>}            
+          /> 
+          <Route
+            path = "/projects"
+            element = {<Projects/>}            
+          />      
+          <Route
+            path = "/certificates"
+            element = {<Certificates/>}            
+          /> 
+          <Route
+            path = "/contact"
+            element = {<Contact/>}            
+          /> 
+          <Route
+            path = "/network"
+            element = {<Network/>}            
+          /> 
+          
+        </Routes>      
+      </HashRouter>
       </div>
       
     
