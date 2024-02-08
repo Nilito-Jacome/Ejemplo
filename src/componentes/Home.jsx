@@ -27,8 +27,8 @@ const Home = () => {{{{
         whileTap={{ scale: 0.9 }}
         href="#/about"
       >
-        <h1 className='Titu_About1'>SOBRE MI</h1>
-        <h1 className='Titu_About'>DEVELOPER WEB FULL-STACK</h1>
+        <h1 className="Titu_About1">SOBRE MI</h1>
+        <h1 className="Titu_About">DEVELOPER WEB FULL-STACK</h1>
       </motion.a>
 
       <motion.a
@@ -43,22 +43,26 @@ const Home = () => {{{{
         <div className="container">
           <div className="cube" ref={ref}>
             <div className="side front">
-              <img className='ImgTech' src="./tecnologias/javascript.png" alt="" />
+              <img
+                className="ImgTech"
+                src="./tecnologias/javascript.png"
+                alt=""
+              />
             </div>
             <div className="side left">
-              <img className='ImgTech' src="./tecnologias/html.png" alt="" />
+              <img className="ImgTech" src="./tecnologias/html.png" alt="" />
             </div>
             <div className="side right">
-              <img className='ImgTech' src="./tecnologias/css.png" alt="" />
+              <img className="ImgTech" src="./tecnologias/css.png" alt="" />
             </div>
             <div className="side top">
-              <img className='ImgTech' src="./tecnologias/react.png" alt="" />
+              <img className="ImgTech" src="./tecnologias/react.png" alt="" />
             </div>
             <div className="side bottom">
-              <img className='ImgTech' src="./tecnologias/node.png" alt="" />
+              <img className="ImgTech" src="./tecnologias/node.png" alt="" />
             </div>
             <div className="side back">
-              <img className='ImgTech' src="./tecnologias/github2.png" alt="" />
+              <img className="ImgTech" src="./tecnologias/github2.png" alt="" />
             </div>
           </div>
         </div>
@@ -80,8 +84,8 @@ const Home = () => {{{{
         whileTap={{ scale: 0.9 }}
         href="#/certificates"
       >
-        <Carousel/>
-        <h1 className='TitCert'>Certificados</h1>
+        <Carousel />
+        <h1 className="TitCert">Certificados</h1>
       </motion.a>
 
       <motion.a
@@ -90,8 +94,8 @@ const Home = () => {{{{
         whileTap={{ scale: 0.9 }}
         href="#/contact"
       >
-        {" "}
-        hola desde formulario
+        <h1 className="TitForm">Escríbeme</h1>
+        <img className="ImgForm" src="./escribir.gif" alt="" />
       </motion.a>
 
       <motion.a
@@ -100,8 +104,13 @@ const Home = () => {{{{
         whileTap={{ scale: 0.9 }}
         href="#/network"
       >
-        {" "}
-        hola desde redes
+        <h1 className="TitRed">Mis Redes Sociales</h1>
+        <div className="Redes">
+          <img className="ImgRed1" src="./icon/cv.png" alt="" />
+          <img className="ImgRed2" src="./icon/gmail.png" alt="" />
+          <img className="ImgRed3" src="./icon/linkedin.png" alt="" />
+          <img className="ImgRed4" src="./icon/whatsapp.png" alt="" />
+        </div>
       </motion.a>
     </motion.div>
   );
