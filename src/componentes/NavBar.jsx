@@ -126,9 +126,6 @@ function Navbar() {
             <a href="#/contact">Formulario</a>
           </div>
 
-          <div className="Redes">
-            <a href="#/network">Redes</a>
-          </div>
           </ul>
         </div>
         

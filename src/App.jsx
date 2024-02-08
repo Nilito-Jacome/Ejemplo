@@ -7,7 +7,6 @@ import Skill from '../src/componentes/Skill';
 import Projects from '../src/componentes/Projects';
 import Certificates from '../src/componentes/Certificates';
 import Contact from '../src/componentes/Contact';
-import Network from '../src/componentes/Network';
 
 
 function App() {
@@ -43,11 +42,7 @@ function App() {
             path = "/contact"
             element = {<Contact/>}            
           /> 
-          <Route
-            path = "/network"
-            element = {<Network/>}            
-          /> 
-          
+                   
         </Routes>      
       </HashRouter>
       </div>
