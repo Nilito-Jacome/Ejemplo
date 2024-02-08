@@ -1,6 +1,7 @@
 import './Home.css';
 import { useRef } from "react";
 import { motion, useAnimationFrame } from 'framer-motion';
+import Carousel from './Carousel';
 
 
 const Home = () => {{{{
@@ -26,8 +27,8 @@ const Home = () => {{{{
         whileTap={{ scale: 0.9 }}
         href="#/about"
       >
-        {" "}
-        hola desde sobre mi
+        <h1 className='Titu_About1'>SOBRE MI</h1>
+        <h1 className='Titu_About'>DEVELOPER WEB FULL-STACK</h1>
       </motion.a>
 
       <motion.a
@@ -79,8 +80,8 @@ const Home = () => {{{{
         whileTap={{ scale: 0.9 }}
         href="#/certificates"
       >
-        {" "}
-        hola desde certificados
+        <Carousel/>
+        <h1 className='TitCert'>Certificados</h1>
       </motion.a>
 
       <motion.a

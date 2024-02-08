@@ -13,7 +13,7 @@ function useMenuAnimation(isOpen) {
           [
             ".menu",
             { transform: "translateX(442%)" },
-            { ease: [0.08, 0.65, 0.53, 0.96], duration: 2 }
+            { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.5 }
           ],
           [
             "ul a",
@@ -71,10 +71,10 @@ function Navbar() {
 
   return (
     <nav className="Navbar">
-      <div className="saludo">
+      <a className="saludo" href="/">      
         <img className="icon_nav" src="./etiqueta.png" alt="" />
-        <div className="navbar-logo">Hola! Bievenido</div>
-      </div>
+        <div className="navbar-logo">Hola! Bievenido</div>      
+      </a>
 
       <div className="Men" ref={scope}>
                

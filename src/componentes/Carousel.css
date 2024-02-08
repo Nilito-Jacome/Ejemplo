@@ -1,0 +1,15 @@
+.Certificado {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    width: 400px;
+    height: 140px;
+}
+
+.Cert {
+    width: 150px;
+    height: 120px;    
+}
+ 
+
+  
