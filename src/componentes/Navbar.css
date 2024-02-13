@@ -1,15 +1,18 @@
 .Navbar {
-  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 10px;
-  
+  /*background-color: #22dddd;*/
   width: 100%;
   height:60px;
   color: seashell;  
   position:fixed;
   z-index: 10;
+}
+.Navbar:hover {
+  border-bottom: 1px solid #ff0055;
+  background-color: #ff0055;
 }
 .saludo {
   display: flex;
@@ -17,7 +20,6 @@
   align-items: center;
   width: 100%;
   gap: 30px;
-  color: seashell;
 }
 .icon_nav{
   width: 50px;
@@ -27,60 +29,10 @@
   font-size: 2rem;
 } 
 
-/*
-.menu {  
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  place-items: end;  
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  background: rgba(85, 5, 214, 0.548);
-  width: 30%;
-}
-
-li {
-  color: blue;
-  display: block;
-  background: rgba(85, 5, 214, 0.548);
-}
-
-ul,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 5px;
-  text-align: end;
-  font-size: 1.5rem;
-}
-
-button {
-  background: black;
-  color:seashell;
-  border: none;
-  border-radius: 10px;
-  padding: 9px 15px;
-  font-size: 2rem; 
-  cursor: pointer;
-  width: fit-content;
-  margin-bottom: 1px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  gap: 10px;
-}
-
-button path {
-  fill:seashell;
-}
-*/
-
-
-
+.navbar-logo:hover {
+  text-shadow: 0 0 20px #0055ff;
+  color: #000000;
+} 
 
 body {
   --black: #000000;
@@ -119,17 +71,21 @@ button {
   left: 0px;
   width: 50px;
   height: 50px;
-  border: solid 1px rgba(255, 245, 238, 0.13);
+  border: solid 1px #ff0055;
   border-radius: 50%;
   background: rgba(100, 148, 237, 0);
   padding: 10px;
  z-index: 1;
 }
 
+button:hover {
+  box-shadow: 0 0 20px #0055ff;
+  background-color:  #000000;
+}
+
 button path {
   fill: black;
 }
-
 
 /***********MENU***********/
 .menu {
@@ -138,8 +94,8 @@ button path {
   left: 5px;
   bottom: 0;
   width: 250px;
-  height: 500px;
-  background:#222;
+  height: 440px;
+  background:#ff0055;
   padding-top: 5px;
   transform: translateX(600%);
   will-change: transform;
@@ -162,6 +118,11 @@ ul a {
   padding: 5px;
   padding-top: 20px;
   will-change: transform, opacity, filter;
+}
+
+ul a:hover {
+  color: #000000;
+  text-shadow: 0 0 20px #0055ff;
 }
 
 ul,

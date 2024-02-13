@@ -11,7 +11,7 @@ const Carousel = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === ImgCertificates.length - 1 ? 0 : prevIndex + 1
       );
-    }, 300);
+    }, 3000);
 
     return () => {
       clearInterval(intervalId);

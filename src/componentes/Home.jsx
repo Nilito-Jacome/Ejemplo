@@ -4,7 +4,7 @@ import { motion, useAnimationFrame } from 'framer-motion';
 import Carousel from './Carousel';
 
 
-const Home = () => {{{{
+const Home = () => {
 
   const ref = useRef(null);
 
@@ -21,18 +21,16 @@ const Home = () => {{{{
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <motion.a
-        className="Box_1"
+      <motion.a className="Box_1"
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         href="#/about"
       >
         <h1 className="Titu_About1">Sobre Mi</h1>
-        <h1 className="Titu_About">DEVELOPER WEB FULL-STACK</h1>
+        <h1 className="Titu_About2">DEVELOPER WEB FULL-STACK</h1>
       </motion.a>
 
-      <motion.a
-        className="Box_2"
+      <motion.a className="Box_2"
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         href="#/skill"
@@ -68,8 +66,7 @@ const Home = () => {{{{
         </div>
       </motion.a>
 
-      <motion.a
-        className="Box_3"
+      <motion.a className="Box_3"
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         href="#/projects"
@@ -78,18 +75,16 @@ const Home = () => {{{{
         hola desde proyectos
       </motion.a>
 
-      <motion.a
-        className="Box_4"
+      <motion.a className="Box_4"
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         href="#/certificates"
       >
-        <Carousel />
+        <Carousel/>
         <h1 className="TitCert">Certificados</h1>
       </motion.a>
 
-      <motion.a
-        className="Box_5"
+      <motion.a className="Box_5"
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         href="#/contact"
@@ -98,23 +93,21 @@ const Home = () => {{{{
         <img className="ImgForm" src="./escribir.gif" alt="" />
       </motion.a>
 
-      <motion.a
-        className="Box_6"
+      <motion.div className="Box_6"
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
       >
         <h1 className="TitRed">Mis Redes Sociales</h1>
         <div className="Redes">
-          <a
+          <motion.a
             href="./icon/Nilo_cv.pdf"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <motion.img
-              className="ImgRed1"
+            <motion.img className="ImgRed1"
               src="./icon/cv.png"
               alt=""
-              animate={{
+              whileHover={{
                 scale: [1, 1.5, 1.5, 1, 1],
                 rotate: [0, 0, 180, 180, 360],
                 borderRadius: ["0%", "25%", "50%", "100%", "0%"],
@@ -123,13 +116,13 @@ const Home = () => {{{{
                 duration: 2,
                 ease: "easeInOut",
                 times: [0, 0.2, 0.8, 0.8, 1],
-                repeat: Infinity,
+                repeat: 1,
                 repeatDelay: 1,
               }}
             />
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href="mailto:destinatario@hubspot.com"
             target="_blank"
             rel="noreferrer noopener"
@@ -138,7 +131,7 @@ const Home = () => {{{{
               className="ImgRed2"
               src="./icon/gmail.png"
               alt=""
-              animate={{
+              whileHover={{
                 scale: [1, 1.5, 1.5, 1, 1],
                 rotate: [0, 0, 180, 180, 720],
                 borderRadius: ["0%", "0%", "50%", "50%", "0%"],
@@ -147,13 +140,13 @@ const Home = () => {{{{
                 duration: 2,
                 ease: "easeInOut",
                 times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
+                repeat: 1,
                 repeatDelay: 1,
               }}
             />
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href="https://linkedin.com/in/nilo-jácome-riera"
             target="_blank"
             rel="noreferrer noopener"
@@ -162,7 +155,7 @@ const Home = () => {{{{
               className="ImgRed3"
               src="./icon/linkedin.png"
               alt=""
-              animate={{
+              whileHover={{
                 scale: [1, 1.5, 1.5, 1, 1],
                 rotate: [0, 180, 180, 90, 360],
                 borderRadius: ["0%", "0%", "50%", "50%", "0%"],
@@ -171,13 +164,13 @@ const Home = () => {{{{
                 duration: 2,
                 ease: "easeInOut",
                 times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
+                repeat: 1,
                 repeatDelay: 1,
               }}
             />
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href="https://api.whatsapp.com/send?phone=59397844272"
             target="_blank"
             rel="noreferrer noopener"
@@ -186,7 +179,7 @@ const Home = () => {{{{
               className="ImgRed4"
               src="./icon/whatsapp.png"
               alt=""
-              animate={{
+              whileHover={{
                 scale: [1, 1.5, 1.5, 1, 1],
                 rotate: [0, 0, 180, 180, 0],
                 borderRadius: ["0%", "0%", "50%", "50%", "0%"],
@@ -195,15 +188,15 @@ const Home = () => {{{{
                 duration: 2,
                 ease: "easeInOut",
                 times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
+                repeat: 1,
                 repeatDelay: 1,
               }}
             />
-          </a>
+          </motion.a>
         </div>
-      </motion.a>
+      </motion.div>
     </motion.div>
   );
-}}}};
+};
 
 export default Home;

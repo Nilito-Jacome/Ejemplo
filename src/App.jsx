@@ -8,14 +8,11 @@ import Projects from '../src/componentes/Projects';
 import Certificates from '../src/componentes/Certificates';
 import Contact from '../src/componentes/Contact';
 
-
 function App() {
   
-  return (
-    
-      <div className='App'>
+  return (    
+      <div className='App'>        
         <NavBar />
-        
         <HashRouter>        
         <Routes>
         <Route
@@ -45,8 +42,7 @@ function App() {
                    
         </Routes>      
       </HashRouter>
-      </div>
-      
+      </div>      
     
   )
 }

@@ -18,14 +18,14 @@ function useMenuAnimation(isOpen) {
           [
             "ul a",
             { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
-            { delay: stagger(0.2), at: "-0.1" }
+            { delay: stagger(0.3), at: "-0.1" }
           ]
         ]
       : [
           [
             "ul a",
             { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
-            { delay: stagger(0.1, { from: "last" }), at: "<" }
+            { delay: stagger(0.2, { from: "last" }), at: "<" }
           ],
           [".menu", { transform: "translateX(600%)" }, { at: "-0.1" }]
         ];
@@ -71,10 +71,10 @@ function Navbar() {
 
   return (
     <nav className="Navbar">
-      <a className="saludo" href="/">      
+      <div className="saludo">
         <img className="icon_nav" src="./etiqueta.png" alt="" />
-        <div className="navbar-logo">Hola! Bievenido</div>      
-      </a>
+        <a className="navbar-logo" href="/">Hola! Bienvenido</a>
+      </div>
 
       <div className="Men" ref={scope}>
                
