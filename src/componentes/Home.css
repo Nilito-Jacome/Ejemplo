@@ -1,13 +1,13 @@
 /******CSS PARA EL HOME Y SUS CONTENEDORES*********/
 .Home {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(187px, 1fr));
   /*grid-template-columns: repeat(6, 187px);*/
   /*grid-template-rows: repeat(6, 65px);*/
-  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(151px, 1fr));
   gap: 1.5rem;
   padding-top: 90px;
-  padding-bottom: 49px;
+  padding-bottom: 48px;
   padding-left: 30px;
   padding-right: 30px;
   background-color: rgba(28, 48, 230, 0.288);
@@ -193,6 +193,7 @@
   flex-direction: row;
   place-items: center;
   justify-content: center;
+  padding: 0;
 }
 .TitCert {
   padding: 10px;
@@ -210,6 +211,7 @@ img.Cert {
   flex-direction: row;
   place-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .TitForm {
@@ -217,7 +219,7 @@ img.Cert {
 }
 
 .ImgForm {
-  width: 150px;
+  width: 140px;
   height: 130px;
 }
 
