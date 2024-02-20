@@ -252,15 +252,11 @@ img.Cert {
   height: 60px;
 }
 
-/*
-@media screen and (max-width:425px) {
+@media screen and (max-width: 1024px) {
   .Home {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 320px;
-    height: 200vh;
+    flex-wrap: wrap;
+    place-content: center;
   }
 
   .Box_1,
@@ -269,42 +265,28 @@ img.Cert {
   .Box_4,
   .Box_5,
   .Box_6 {
-    width: 300px;
-    height: 200px;
-    font-size: 0.6rem;
+    width: min(480px, 48%);
+    height: 150px;
+    font-size: 0.8rem;
   }
-
-  .Box_1 .Titu_About1 {
-    font-size: 1.2rem;
-    padding-top: 40px;
+  .Titu_About2 {
+    font-size: 1.3rem;
   }
-
-  .Box_1:hover .Titu_About1 {
-    font-size: 2.5rem;
-  }
-
-  .Box_1 .Titu_About2 {
-    font-size: 0.6rem;
-    padding-top: 30px;
-  }
-
+  .Box_1:hover .Titu_About1,
   .Box_1:hover .Titu_About2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
-  
+  .Redes {
+    gap: 50px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
   .Redes {
     gap: 30px;
   }
-
-    .ImgRed1,
-    .ImgRed2,
-    .ImgRed3,
-    .ImgRed4 {
-      width: 40px;
-      height: 40px;
-    }
 }
-*/
 
 @media screen and (max-width: 425px) {
   .Home {
