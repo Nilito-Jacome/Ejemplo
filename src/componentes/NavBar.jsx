@@ -12,7 +12,7 @@ function useMenuAnimation(isOpen) {
       ? [
           [
             ".menu",
-            { transform: "translateX(442%)" },
+            { transform: "translateX(0)" },
             { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.5 }
           ],
           [
@@ -27,7 +27,7 @@ function useMenuAnimation(isOpen) {
             { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
             { delay: stagger(0.2, { from: "last" }), at: "<" }
           ],
-          [".menu", { transform: "translateX(600%)" }, { at: "-0.1" }]
+          [".menu", { transform: "translateX(-100%)" }, { at: "-0.1" }]
         ];
 
     animate([
@@ -71,13 +71,7 @@ function Navbar() {
 
   return (
     <nav className="Navbar">
-      <div className="saludo">
-        <img className="icon_nav" src="./etiqueta.png" alt="" />
-        <a className="navbar-logo" href="/">Hola! Bienvenido</a>
-      </div>
-
       <div className="Men" ref={scope}>
-               
         <button onClick={toggle}>
           <svg width="23" height="18" viewBox="0 0 23 18">
             <Path
@@ -102,35 +96,39 @@ function Navbar() {
 
         <div className="menu">
           <ul>
-          <div className="Inicio">
-            <a href="/">Inicio</a>
-          </div>
+            <div className="Inicio">
+              <a href="/">Inicio</a>
+            </div>
 
-          <div className="SobreMi">
-            <a href="#/about">Sobre Mi</a>
-          </div>
+            <div className="SobreMi">
+              <a href="#/about">Sobre Mi</a>
+            </div>
 
-          <div className="Habilidades">
-            <a href="#/skill">Habilidades</a>
-          </div>
+            <div className="Habilidades">
+              <a href="#/skill">Habilidades</a>
+            </div>
 
-          <div className="Proyectos">
-            <a href="#/projects">Proyectos</a>
-          </div>
+            <div className="Proyectos">
+              <a href="#/projects">Proyectos</a>
+            </div>
 
-          <div className="Certificados">
-            <a href="#/certificates">Certificados</a>
-          </div>
+            <div className="Certificados">
+              <a href="#/certificates">Certificados</a>
+            </div>
 
-          <div className="Formulario">
-            <a href="#/contact">Formulario</a>
-          </div>
-
+            <div className="Formulario">
+              <a href="#/contact">Formulario</a>
+            </div>
           </ul>
         </div>
-        
       </div>
 
+      <div className="saludo">
+        <img className="icon_nav" src="./etiqueta.png" alt="" />
+        <a className="navbar-logo" href="/">
+          Hola! Bienvenido
+        </a>
+      </div>
     </nav>
   );
 }

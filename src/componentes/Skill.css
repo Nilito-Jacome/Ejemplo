@@ -1,16 +1,16 @@
 .Skill {
-    width: 100%;
+    width: max(100%, 320px);
     height: 100vh;
     display: flex;
     place-content: center;
     align-items: center;
     background-color: black;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .container1 {
-    width: min(100%, 600px);
-    height: 270px;
+    width: max(45%, 150px);
+    height: 260px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -18,15 +18,14 @@
     list-style: none;     
     background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
-    place-content: center;
-    
+    place-content: center;    
   }
   .container2 {
-    width: min(550px, 100%);
+    width: max(100%, 320px);
     height: 260px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 5px;
     column-gap: 30px;
     padding: 10px;
     place-content: center;
@@ -37,8 +36,8 @@
     border-radius: 10%;
     text-align: center;
     padding: 2px;
-    width: 100px;
-    height: 75px;
+    width: min(30%, 95px);
+    height: 80px;
     display: flex;
     flex-direction: column;
     place-content: center;
@@ -47,9 +46,27 @@
   }
   
   .ImgSkill {
-    width: 70px;
-    height: 55px;
+    width: min(70%, 90px);
+    height: 50px;
   }
   .TituSkill {
-    font-size: 10px;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width:425px) {
+    .Skill {
+      height: 550vh;
+      padding-top: 200px;
+      align-items:start;
+    }
+    .container2 {
+      column-gap: 10px;
+      padding: 0;
+      padding-top: 260px;
+    }
+   
+
+    .TituSkill {
+      font-size: 0.4rem;
+    }
   }

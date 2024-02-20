@@ -1,9 +1,7 @@
 .About {
-    display: flex;
-    flex-direction: column;
     background-color: black;
     padding: 80px 10px 0 10px;
-    height: 100vh;
+    height: 100vw;
 }
 .texto {
     display: flex;
@@ -83,9 +81,44 @@
 .text3:hover,
 .text4:hover,
 .text5:hover {
-    box-shadow: rebeccapurple;
-    background-color: #0055ff;
+    border: 1px solid #ff0055;
+    box-shadow: 0 0 2px #ff0055;
+    background:linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%)
+    
 }
 .Sobre:hover {
+    border: 1px solid #0055ff;
+    box-shadow: 0 0 20px #0055ff;
     background: #ff0055;
 }
+
+@media screen and (max-width:320px) {
+    .About {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        height: 300vw;
+    }
+    .texto {
+      display: flex;
+      flex-direction: column; 
+      place-items: center;    
+    }
+    .Sobre {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .text1,
+    .text2,
+    .text3,
+    .text4,
+    .text5 {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 300px;
+}
+    
+  }
+  

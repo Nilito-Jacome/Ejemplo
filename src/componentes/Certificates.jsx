@@ -1,4 +1,5 @@
-import './Certificates.css';import { useState } from "react";
+import './Certificates.css';
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import ImgCertificates from './ImgCertificates';
@@ -7,7 +8,7 @@ import ImgCertificates from './ImgCertificates';
 const variants = {
   enter: (direction) => {
     return {
-      x: direction > 0 ? 1000 : -1000,
+      x: direction > 0 ? 800 : -800,
       opacity: 0
     };
   },
@@ -19,13 +20,13 @@ const variants = {
   exit: (direction) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+      x: direction < 0 ? 800 : -800,
       opacity: 0
     };
   }
 };
 
-const swipeConfidenceThreshold = 10000;
+const swipeConfidenceThreshold = 100;
 const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
@@ -55,7 +56,7 @@ const Certificates = () => {
           exit="exit"
           transition={{
             x: { type: "spring", stiffness: 30, damping: 3 },
-            opacity: { duration: 1 }
+            opacity: { duration: 0.5 }
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
