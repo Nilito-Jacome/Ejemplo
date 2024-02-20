@@ -279,8 +279,8 @@ img.Cert {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
     gap: 10px;
+    
     height: 200vh;
   }
 
