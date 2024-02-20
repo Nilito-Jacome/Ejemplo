@@ -1,31 +1,56 @@
 /******CSS PARA EL HOME Y SUS CONTENEDORES*********/
 .Home {
   display: grid;
-  grid-template-columns: repeat(6, 187px);
-  grid-template-rows: repeat(6, 65px);
-  gap: 20px 35px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /*grid-template-columns: repeat(6, 187px);*/
+  /*grid-template-rows: repeat(6, 65px);*/
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
   padding-top: 90px;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  height: 100vh;
+  padding-bottom: 49px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(28, 48, 230, 0.288);
+  justify-content: flex-end;
+}
+
+/******ANIMACION DE LAS BOX*********/
+.Box_1:hover,
+.Box_2:hover,
+.Box_3:hover,
+.Box_4:hover,
+.Box_5:hover,
+.Box_6:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+  background-color: #ff0055;
+  box-shadow: 0 0 20px #0055ff;
+}
+/**********CONFIGURACION GEERAL DE LAS BOX*******/
+.Box_1,
+.Box_2,
+.Box_3,
+.Box_4,
+.Box_5,
+.Box_6 {
+  border: 1px solid #ff005563;
+  border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 /******ABOUT => BOX_1*********/
 .Box_1 {
   grid-column: 1 / 3;
   grid-row: 1 / 4;
-  /*background-color: rgba(0, 255, 255, 0.062);*/
-  border: 1px solid #ff005563;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  place-content: center;
 }
 
 .Titu_About1 {
   display: block;
   margin: auto;
-  padding-top: 50px;
-  text-align: center;
 }
 
 .Box_1:hover .Titu_About1 {
@@ -34,7 +59,7 @@
   white-space: nowrap;
   border-right: 4px solid transparent;
   width: 10ch;
-  animation: typing 2s steps(10), blink .105s infinite step-end alternate;
+  animation: typing 2s steps(10), blink 0.105s infinite step-end alternate;
   overflow: hidden;
   animation-iteration-count: infinite;
   text-align: center;
@@ -43,8 +68,6 @@
 .Titu_About2 {
   display: block;
   margin: auto;
-  padding-top: 50px;
-  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -54,7 +77,7 @@
   white-space: nowrap;
   border-right: 4px solid transparent;
   width: 25ch;
-  animation: typing 5s steps(25), blink .55s infinite step-end alternate;
+  animation: typing 5s steps(25), blink 0.55s infinite step-end alternate;
   overflow: hidden;
   animation-iteration-count: infinite;
 }
@@ -81,15 +104,11 @@
   }
 }
 
-
 /******TECNOLOGIA => BOX_2*********/
 
 .Box_2 {
   grid-column: 1 / 3;
   grid-row: 4 / 7;
-  /*background-color:rgba(0, 0, 255, 0.055);*/
-  border: 1px solid #ff005563;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
   place-content: end;
@@ -123,43 +142,36 @@
   width: 80%;
   height: 80%;
   opacity: 0.8;
-  /*border: solid 1px red;*/
 }
 
 /******LADOS DEL CUBO****************/
 .front {
   transform: rotateY(0deg) translateZ(40px);
-  /*background-color: #ee4444;*/
   background-color: black;
 }
 
 .right {
   transform: rotateY(90deg) translateZ(40px);
-  /*background-color: #ffcc00;*/
   background-color: black;
 }
 
 .back {
   transform: rotateY(180deg) translateZ(40px);
-  /*background-color: #ff0055;*/
   background-color: black;
 }
 
 .left {
   transform: rotateY(-90deg) translateZ(40px);
-  /*background-color: #8855ff;*/
   background-color: black;
 }
 
 .top {
   transform: rotateX(90deg) translateZ(40px);
-  /*background-color: #0099ff;*/
   background-color: black;
 }
 
 .bottom {
   transform: rotateX(-90deg) translateZ(40px);
-  /*background-color: #22cc88;*/
   background-color: black;
 }
 
@@ -171,28 +183,20 @@
 .Box_3 {
   grid-column: 3 / 5;
   grid-row: 1 / 7;
-  /*background-color:rgba(137, 43, 226, 0.582);*/
-  border: 1px solid #ff005563;
-  border-radius: 10px;
 }
 
 /******CERTIFICADOS => BOX_4*********/
 .Box_4 {
   grid-column: 5 / 7;
   grid-row: 1 / 3;
-  /*background-color:rgba(165, 42, 42, 0.356);*/
-  border: 1px solid #ff005563;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
   place-items: center;
   justify-content: center;
 }
-
 .TitCert {
-  padding: 10px
+  padding: 10px;
 }
-
 img.Cert {
   width: 140px;
   height: 120px;
@@ -202,9 +206,6 @@ img.Cert {
 .Box_5 {
   grid-column: 5 / 7;
   grid-row: 3 / 5;
-  /*background-color:rgba(184, 135, 11, 0.281);*/
-  border: 1px solid #ff005563;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
   place-items: center;
@@ -212,7 +213,7 @@ img.Cert {
 }
 
 .TitForm {
-  padding: 10px
+  padding: 10px;
 }
 
 .ImgForm {
@@ -224,9 +225,6 @@ img.Cert {
 .Box_6 {
   grid-column: 5 / 7;
   grid-row: 5 / 7;
-  /*background-color:rgba(0, 255, 0, 0.212);*/
-  border: 1px solid #ff005563;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -248,39 +246,18 @@ img.Cert {
 .ImgRed2,
 .ImgRed3,
 .ImgRed4 {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
-/******ANIMACION DE LAS BOX*********/
-.Box_1:hover,
-.Box_2:hover,
-.Box_3:hover,
-.Box_4:hover,
-.Box_5:hover,
-.Box_6:hover {
-  transform: scale(1.1);
-  transition: 0.8s;
-  background-color: #ff0055;
-  box-shadow: 0 0 20px #0055ff;
-}
-
-.Box_1,
-.Box_2,
-.Box_3,
-.Box_4,
-.Box_5,
-.Box_6 {
-  font-size: 1.2rem;
-}
-
+/*
 @media screen and (max-width:425px) {
   .Home {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    
+    width: 320px;
     height: 200vh;
   }
 
@@ -291,7 +268,7 @@ img.Cert {
   .Box_5,
   .Box_6 {
     width: 300px;
-    height: 150px;
+    height: 200px;
     font-size: 0.6rem;
   }
 
@@ -325,3 +302,87 @@ img.Cert {
       height: 40px;
     }
 }
+*/
+
+@media screen and (max-width: 425px) {
+  .Home {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+  }
+
+  .Box_1,
+  .Box_2,
+  .Box_3,
+  .Box_4,
+  .Box_5,
+  .Box_6 {
+    width: min(370px, 100%);
+    height: 150px;
+    font-size: 0.8rem;
+  }
+  .Titu_About2 {
+    font-size: 1.2rem;
+  }
+  .Box_1:hover .Titu_About1,
+  .Box_1:hover .Titu_About2 {
+    font-size: 1.5rem;
+  }
+  img.Cert {
+    width: 150px;
+    height: 120px;
+  }
+
+  .ImgForm {
+    width: 150px;
+    height: 120px;
+  }
+  .Redes {
+    gap: 30px;
+  }
+  .ImgRed1,
+  .ImgRed2,
+  .ImgRed3,
+  .ImgRed4 {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Box_1,
+  .Box_2,
+  .Box_3,
+  .Box_4,
+  .Box_5,
+  .Box_6 {
+    height: 150px;
+    font-size: 0.6rem;
+  }
+
+    .Titu_About2 {
+    font-size: 1rem;
+  }
+  .Box_1:hover .Titu_About1,
+  .Box_1:hover .Titu_About2 {
+    font-size: 1.2rem;
+  }
+
+  img.Cert {
+    width: 100px;
+    height: 90px;
+  }
+
+  .ImgForm {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ImgRed1,
+  .ImgRed2,
+  .ImgRed3,
+  .ImgRed4 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
