@@ -1,0 +1,162 @@
+
+  .Certificates {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-decoration: none;
+    color:seashell;
+    font-size: 1.2rem;
+  }
+  .TituCerti {
+    padding-bottom: calc(63% - 420px);
+  }
+  
+  .next,
+  .prev {
+    top: calc(60% - 50px);
+    position: absolute;
+    background:rgba(105, 105, 105, 0.356);
+    border-radius: 0px;
+    width: 10px;
+    height: 10px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+  
+  .next {
+    right: 10px;
+    transform: scale(10);
+  }
+  
+  .prev {
+    left: 10px;
+    transform: scale(-10);
+  }
+  
+  .ImgCert {
+    position: absolute;
+    width: calc(65% - 10vw);
+    height:calc(100% - 10vw);
+    margin-top: 80px;
+  }
+
+ 
+  @media screen and (max-width:1024px) {
+    .Certificates {
+      font-size: 1.2rem;
+    }
+    .TituCerti {
+      padding-bottom: calc(35% - 10px);
+    }
+    .next {
+      transform: scale(6);
+    } 
+    .prev {
+      transform: scale(-6);
+    } 
+    .next, 
+    .prev {
+      margin-left: 110px;
+      margin-right: 110px;
+      top: calc(60% - 30px);
+      padding-bottom: calc(61% - 640px);
+    }
+    .ImgCert {
+      width: calc(60% - 10vw);
+      height:calc(90% - 10vw);
+      margin-top: 80px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .Certificates {
+      font-size: 1rem;
+    }
+    .TituCerti {
+      padding-bottom: calc(45% - 10px);
+    }
+    .next {
+      transform: scale(4);
+    } 
+    .prev {
+      transform: scale(-4);
+    } 
+    .next, 
+    .prev {
+      margin-left: 60px;
+      margin-right: 60px;
+      top: calc(60% - 30px);
+      padding-bottom: calc(61% - 520px);
+    }
+    .ImgCert {
+      width: calc(70% - 10vw);
+      height:calc(90% - 15vw);
+      margin-top: 80px;
+    }
+  }
+  
+  @media screen and (max-width:425px) {
+    .Certificates {
+      font-size: 1rem;
+    }
+    .TituCerti {
+      padding-bottom: calc(72% - 10px);
+    }
+    .next, 
+    .prev {
+      margin-left: 10px;
+      margin-right: 10px;
+      top: calc(70% - 50px);
+      padding-bottom: calc(61% - 420px);
+    } 
+  .ImgCert {
+    width: calc(90% - 10vw);
+    height:calc(85% - 40vw);
+    margin-top: 80px;
+  }
+  }
+
+  @media screen and (max-width:375px) {
+    .Certificates {
+      font-size: 0.8rem;
+    }
+    .TituCerti {
+      padding-bottom: calc(80% - 10px);
+    }
+    .next {
+      transform: scale(2);
+    } 
+    .prev {
+      transform: scale(-2);
+    }  
+    .ImgCert {
+      width: calc(90% - 10vw);
+      height:calc(75% - 40vw);
+      margin-top: 80px;
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .Certificates {
+      font-size: 0.8rem;
+    }
+   
+    .ImgCert {
+      width: calc(75% - 10vw);
+      height:calc(50% - 40vw);
+      margin-top: 80px;
+    }
+  }
+  

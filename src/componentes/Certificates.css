@@ -1,21 +1,27 @@
-
-  .Certificates {
-    width: 100vw;
+.Certificates {
+    padding: 60.5px 10px 0 10px;
+    width: 100%;
     height: 100vh;
-    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    text-decoration: none;
-    color:seashell;
-    font-size: 1.2rem;
-  }
-  .TituCerti {
-    padding-bottom: calc(63% - 420px);
-  }
-  
-  .next,
+    flex-direction: column;
+    place-items: center;
+    
+    background-color: rgba(0, 255, 255, 0.363);
+}
+.TituCerti {
+    position: absolute;
+    justify-items: start;
+    z-index: 4;
+    color: brown;
+}
+.ImgCert {
+    top: 15%;
+    position: absolute;
+    width: min(70%, 700px);
+    height: min(80%, 500px);
+    z-index: 2;
+}
+.next,
   .prev {
     top: calc(60% - 50px);
     position: absolute;
@@ -23,8 +29,8 @@
     border-radius: 0px;
     width: 10px;
     height: 10px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 150px;
+    margin-right: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,9 +38,9 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 1.2rem;
-    z-index: 2;
+    z-index: 3;
   }
-  
+
   .next {
     right: 10px;
     transform: scale(10);
@@ -44,119 +50,32 @@
     left: 10px;
     transform: scale(-10);
   }
-  
-  .ImgCert {
-    position: absolute;
-    width: calc(65% - 10vw);
-    height:calc(100% - 10vw);
-    margin-top: 80px;
-  }
 
- 
-  @media screen and (max-width:1024px) {
-    .Certificates {
-      font-size: 1.2rem;
-    }
+  @media screen and (max-width: 320px) {
     .TituCerti {
-      padding-bottom: calc(35% - 10px);
-    }
-    .next {
-      transform: scale(6);
-    } 
-    .prev {
-      transform: scale(-6);
-    } 
-    .next, 
-    .prev {
-      margin-left: 110px;
-      margin-right: 110px;
-      top: calc(60% - 30px);
-      padding-bottom: calc(61% - 640px);
+        top: 15%;
+        font-size: 1.2rem;
     }
     .ImgCert {
-      width: calc(60% - 10vw);
-      height:calc(90% - 10vw);
-      margin-top: 80px;
+        top: 25%;
+        position: absolute;
+        width: min(70%, 320px);
+        height: min(80%, 200px);
+        z-index: 2;
     }
+    .next,
+  .prev {
+    top: calc(60% - 80px);
+    margin-left: 15px;
+    margin-right: 15px;
   }
-
-  @media screen and (max-width:768px) {
-    .Certificates {
-      font-size: 1rem;
-    }
-    .TituCerti {
-      padding-bottom: calc(45% - 10px);
-    }
-    .next {
-      transform: scale(4);
-    } 
-    .prev {
-      transform: scale(-4);
-    } 
-    .next, 
-    .prev {
-      margin-left: 60px;
-      margin-right: 60px;
-      top: calc(60% - 30px);
-      padding-bottom: calc(61% - 520px);
-    }
-    .ImgCert {
-      width: calc(70% - 10vw);
-      height:calc(90% - 15vw);
-      margin-top: 80px;
-    }
+.next {
+    right: 3px;
+    transform: scale(3);
   }
   
-  @media screen and (max-width:425px) {
-    .Certificates {
-      font-size: 1rem;
-    }
-    .TituCerti {
-      padding-bottom: calc(72% - 10px);
-    }
-    .next, 
-    .prev {
-      margin-left: 10px;
-      margin-right: 10px;
-      top: calc(70% - 50px);
-      padding-bottom: calc(61% - 420px);
-    } 
-  .ImgCert {
-    width: calc(90% - 10vw);
-    height:calc(85% - 40vw);
-    margin-top: 80px;
+  .prev {
+    left: 1px;
+    transform: scale(-3);
   }
   }
-
-  @media screen and (max-width:375px) {
-    .Certificates {
-      font-size: 0.8rem;
-    }
-    .TituCerti {
-      padding-bottom: calc(80% - 10px);
-    }
-    .next {
-      transform: scale(2);
-    } 
-    .prev {
-      transform: scale(-2);
-    }  
-    .ImgCert {
-      width: calc(90% - 10vw);
-      height:calc(75% - 40vw);
-      margin-top: 80px;
-    }
-  }
-
-  @media screen and (max-width:320px) {
-    .Certificates {
-      font-size: 0.8rem;
-    }
-   
-    .ImgCert {
-      width: calc(75% - 10vw);
-      height:calc(50% - 40vw);
-      margin-top: 80px;
-    }
-  }
-  
