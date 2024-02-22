@@ -152,12 +152,10 @@
     .Certificates {
       font-size: 0.8rem;
     }
-    .TituCerti {
-      padding-bottom: calc(85% - 10px);
-    }
+   
     .ImgCert {
-      width: calc(85% - 10vw);
-      height:calc(60% - 40vw);
+      width: calc(75% - 10vw);
+      height:calc(50% - 40vw);
       margin-top: 80px;
     }
   }
