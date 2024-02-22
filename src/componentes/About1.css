@@ -1,0 +1,109 @@
+.About {
+    padding: 80px 10px 0 10px;
+    width: 100%;
+    height: min(100vh, 100%);
+}
+.texto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    place-content: center;
+    text-align: center;
+}
+.Sobre {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    width: 150px;
+    height: 150px;
+    margin-top: 37vh;
+    border: 1px solid rgba(255, 245, 238, 0.192);
+    border-radius: 50%;
+    background-color: black;
+    z-index: 5;
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5 {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    font-size: 1.4rem;
+    text-align: left;
+    border: 1px solid rgba(255, 245, 238, 0.233);
+    width: 615px;
+    height: 175px;
+    position: absolute;
+    border-radius: 15%;
+    padding: 11px;
+}
+
+.text1 {    
+    margin: auto;
+    width: 1000px;
+    height: 80px;
+}
+.text2 {
+    margin-top: 19vh;
+    margin-left: 720px;       
+}
+.text3 {
+    margin-top: 19vh;
+    margin-right: 720px;    
+}
+.text4 {
+    margin-top: 50vh;
+    margin-right: 720px;
+}
+.text5 {
+    margin-top: 50vh;
+    margin-left: 720px;
+}
+
+.listaAbout {
+    padding-top: 5px;
+    padding-left: 30px;
+    list-style:square;
+}
+
+.text1:hover,
+.text2:hover,
+.text3:hover,
+.text4:hover,
+.text5:hover {
+    border: 1px solid #ff0055;
+    box-shadow: 0 0 2px #ff0055;
+    background:linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%)
+    
+}
+.Sobre:hover {
+    border: 1px solid #0055ff;
+    box-shadow: 0 0 20px #0055ff;
+    background: #ff0055;
+}
+@media screen and (max-width: 425px) {
+    .About {
+        width: min(320px, 100%);
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        place-content: start;
+        align-content: center;
+    }
+
+    .text1,
+    .text2,
+    .text3,
+    .text4,
+    .text5 {
+        font-size: 0.6rem;
+        width: 320px;
+    }
+}
+  
