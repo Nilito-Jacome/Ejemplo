@@ -10,7 +10,9 @@ const About = () => {
       exit={{ opacity: 0 }}
     >
       <div className="texto">
-        <h1 className="Sobre">Sobre mi</h1>
+        <div className="text0">
+          Sobre mi
+        </div>
         <div className="text1">
           Soy Nilo Jácome, Desarrollador Web Full Stack e Ingeniero Eléctrico de
           la Universidad Politécnica Salesiana, en el Ecuador.
@@ -36,9 +38,9 @@ const About = () => {
         </div>
         <div className="text5">
           Estoy en constante preparación y actualización de mis conocimiento y
-          habilidades. Considero que soy una persona creativa e investigativa,
-          doy siempre el máximo esfuerzo y dedicación al trabajo, tengo la
-          disponibilidad de ayudarte de forma inmediata.
+          habilidades. Considero que soy una persona creativa e investigadora,
+          doy siempre el máximo esfuerzo y dedicación, tengo la
+          disponibilidad de colaborarte de forma inmediata.
         </div>
       </div>
     </motion.div>
