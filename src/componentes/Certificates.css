@@ -52,34 +52,23 @@
     .Certificates {
         padding: 60.5px 5px 0 5px;
         width: 320px;
-        height: 80vh;
+        height: 100vh;
     }
 
     .TituCerti {
+        position: relative;
         top: 15%;
         font-size: 1.2rem;
     }
     .ImgCert {
         top: 25%;
-        position: absolute;
+        position: relative;
         width: 200px;
         height: 100px;
     }
     .next,
   .prev {
-    top: calc(50% - 80px);
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 10px;
-    height: 10px;
-    font-size: 1rem;
-    background-color: blueviolet;
+    display: none;
   }
-.next {
-    transform: scale(1);
-  }
-  
-  .prev {
-    transform: scale(-1);
-  }
+
   }
