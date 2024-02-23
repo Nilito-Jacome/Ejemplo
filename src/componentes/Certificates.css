@@ -1,75 +1,70 @@
 .Certificates {
-    padding: 60.5px 10px 0 10px;
+    padding: 60.5px 20px 0 20px;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    place-content: start;
     place-items: center;
     background-color: rgba(0, 255, 255, 0.363);
 }
 .TituCerti {
     position: absolute;
     justify-items: start;
-    z-index: 4;
+    padding-top: 5px;
     color: brown;
 }
 .ImgCert {
-    top: 15%;
     position: absolute;
-    width: 700px;
-    height: 500px;
+    padding-top: 50px;
+    width: 800px;
+    height: 550px;
 }
 .next,
   .prev {
-    top: calc(60% - 50px);
-    position: absolute;
     background:rgba(105, 105, 105, 0.356);
-    border-radius: 0px;
-    width: 10px;
-    height: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
+    font-size: 1.2rem; 
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2rem;
+    place-content: center;
+    place-items: center;
+    top: calc(60% - 50px);
+    background:rgba(105, 105, 105, 0.356);
   }
-
   .next {
-    right: 10px;
-    transform: scale(10);
-  }
-  
+    right: 150px;
+    transform: scale(5);
+  }  
   .prev {
-    left: 10px;
-    transform: scale(-10);
+    left: 150px;
+    transform: scale(-5);    
   }
-
-  @media screen and (max-width: 375px) {
-    .Certificates {
-        padding: 60.5px 5px 0 5px;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .TituCerti {
-        position: relative;
-        top: 15%;
+  @media screen and (max-width:320px) {
+    .TituCerti {        
+        padding-top: 15px;
+        color: rgb(42, 165, 83);
         font-size: 1.2rem;
     }
     .ImgCert {
-        top: 25%;
-        position: relative;
-        width: 100px;
-        height: 50px;
+        padding-top: 50px;
+        width: 180px;
+        height: 150px;
     }
     .next,
   .prev {
-    visibility: hidden;
-    
+    top: calc(36% - 50px);
   }
+    .next {
+        right: 10px;
+        transform: scale(1);
+      }  
+      .prev {
+        left: 10px;
+        transform: scale(-1);    
+      }
 
   }
+  
