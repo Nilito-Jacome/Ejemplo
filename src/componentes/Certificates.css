@@ -49,24 +49,67 @@
     left: 150px;
     transform: scale(-5);
 }
+@media screen and (max-width:768px) {
+    .TituCerti {
+        padding-top: 15px;
+        font-size: 1.5rem;
+    }
+    .ImgCert {
+        padding-top: 50px;
+        width: 80%;
+        height: 75%;
+    }
+    .next,
+    .prev {
+        visibility: hidden;
+    }  
+}
+@media screen and (max-width:425px) {
+    .TituCerti {
+        padding-top: 15px;
+        font-size: 1.4rem;
+    }
+    .ImgCert {
+        padding-top: 50px;
+        width: 80%;
+        height: 55%;
+    }
+    .next,
+    .prev {
+        visibility: hidden;
+    }  
+}
 
-@media screen and (width:320px) {
+@media screen and (max-width:375px) {
+    .TituCerti {
+        padding-top: 15px;
+        font-size: 1.3rem;
+    }
+    .ImgCert {
+        padding-top: 50px;
+        width: 80%;
+        height: 50%;
+    }
+    .next,
+    .prev {
+        visibility: hidden;
+    }  
+}
+
+@media screen and (max-width:320px) {
     .Certificates {
         width: 100vw;
         height: 100vh;
     }
-
     .TituCerti {
         padding-top: 15px;
         font-size: 1.2rem;
     }
-
     .ImgCert {
         padding-top: 50px;
-        width: 30%;
-        height: 20%;
+        width: 80%;
+        height: 45%;
     }
-
     .next,
     .prev {
         top: calc(36% - 50px);
@@ -75,17 +118,14 @@
         height: 5px;
         visibility: hidden;
     }
-
     .next {
         right: 10px;
         transform: scale(1);
         visibility: hidden;
     }
-
     .prev {
         left: 10px;
         transform: scale(-1);
         visibility: hidden;
     }
-
 }
