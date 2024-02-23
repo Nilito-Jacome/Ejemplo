@@ -48,7 +48,7 @@
     transform: scale(-5);
 }
 
-@media screen and (width:375px) {
+@media screen and (width:320px) {
     .Certificates {
         width: 100vw;
         height: 100vh;
@@ -62,8 +62,8 @@
 
     .ImgCert {
         padding-top: 50px;
-        width: 70%;
-        height: 50%;
+        width: 30%;
+        height: 20%;
     }
 
     .next,
@@ -72,6 +72,7 @@
         font-size: 0.6rem;
         width: 5px;
         height: 5px;
+        visibility: hidden;
     }
 
     .next {
