@@ -8,22 +8,25 @@
     place-items: center;
     background-color: rgba(0, 255, 255, 0.363);
 }
+
 .TituCerti {
     position: absolute;
     justify-items: start;
     padding-top: 5px;
     color: brown;
 }
+
 .ImgCert {
     position: absolute;
     padding-top: 50px;
     width: 800px;
     height: 550px;
 }
+
 .next,
-  .prev {
-    background:rgba(105, 105, 105, 0.356);
-    font-size: 1.2rem; 
+.prev {
+    background: rgba(105, 105, 105, 0.356);
+    font-size: 1.2rem;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -32,42 +35,55 @@
     place-content: center;
     place-items: center;
     top: calc(60% - 50px);
-    background:rgba(105, 105, 105, 0.356);
-  }
-  .next {
+    background: rgba(105, 105, 105, 0.356);
+}
+
+.next {
     right: 150px;
     transform: scale(5);
-  }  
-  .prev {
+}
+
+.prev {
     left: 150px;
-    transform: scale(-5);    
-  }
-  @media screen and (max-width:320px) {
-    .TituCerti {        
+    transform: scale(-5);
+}
+
+@media screen and (width:375px) {
+    .Certificates {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .TituCerti {
         padding-top: 15px;
         color: rgb(42, 165, 83);
         font-size: 1.2rem;
     }
+
     .ImgCert {
         padding-top: 50px;
-        width: 70px;
-        height: 60px;
+        width: 70%;
+        height: 50%;
     }
+
     .next,
-  .prev {
-    top: calc(36% - 50px);
-    font-size: 0.6rem; 
-    width: 5px;
-    height: 5px;
-  }
+    .prev {
+        top: calc(36% - 50px);
+        font-size: 0.6rem;
+        width: 5px;
+        height: 5px;
+    }
+
     .next {
         right: 10px;
         transform: scale(1);
-      }  
-      .prev {
-        left: 10px;
-        transform: scale(-1);    
-      }
+        visibility: hidden;
+    }
 
-  }
-  
+    .prev {
+        left: 10px;
+        transform: scale(-1);
+        visibility: hidden;
+    }
+
+}
