@@ -63,12 +63,13 @@
     .ImgCert {
         top: 25%;
         position: relative;
-        width: 150px;
-        height: 100px;
+        width: 100px;
+        height: 50px;
     }
     .next,
   .prev {
-    display: none;
+    visibility: hidden;
+    
   }
 
   }
