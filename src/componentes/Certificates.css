@@ -16,8 +16,8 @@
 .ImgCert {
     top: 15%;
     position: absolute;
-    width: min(70%, 700px);
-    height: min(80%, 500px);
+    width: 700px;
+    height: 500px;
 }
 .next,
   .prev {
