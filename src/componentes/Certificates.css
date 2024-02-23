@@ -70,9 +70,10 @@
         font-size: 1.4rem;
     }
     .ImgCert {
+        margin-top: 20px;
         padding-top: 50px;
         width: 80%;
-        height: 55%;
+        height: 45%;
     }
     .next,
     .prev {
@@ -86,9 +87,10 @@
         font-size: 1.3rem;
     }
     .ImgCert {
+        margin-top: 20px;
         padding-top: 50px;
         width: 80%;
-        height: 50%;
+        height: 40%;
     }
     .next,
     .prev {
@@ -106,9 +108,10 @@
         font-size: 1.2rem;
     }
     .ImgCert {
+        margin-top: 20px;
         padding-top: 50px;
         width: 80%;
-        height: 45%;
+        height: 40%;
     }
     .next,
     .prev {
